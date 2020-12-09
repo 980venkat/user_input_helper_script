@@ -36,19 +36,16 @@ do_action(){
 enable() {
     echo "Enable Cloud Watch Event Rule $RULE_NAME"
     do_action "enable-rule"
-  #  aws events enable-rule --name $RULE_NAME  --profile=mae-co-dev
 }
 
 disable() {
     echo "Disable Cloud Watch Event Rule $RULE_NAME"
     do_action "disable-rule"
-  #  aws events disable-rule --name $RULE_NAME  --profile=mae-co-dev
 }
 
 verify() {
     echo "Verify Cloud Watch Event Rule $RULE_NAME"
     do_action "describe-rule"
-  #  aws events describe-rule --name $RULE_NAME  --profile=mae-co-dev | jq -jr '.State, "  ", .Arn'
 
 }
 
