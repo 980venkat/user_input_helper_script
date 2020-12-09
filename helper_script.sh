@@ -1,7 +1,7 @@
 #!/bin/bash
 RULE_NAME=""
 PROFILES_FILE="profiles.txt"
-#AWS_ACCOUNT_NUM=$(aws sts get-caller-identity --query Account --output text --profile=mae-co-dev)
+#AWS_ACCOUNT_NUM=$(aws sts get-caller-identity --query Account --output text --profile=dev)
 
 if [ -f "$PROFILES_FILE" ]; then
     echo "$PROFILES_FILE exists."
